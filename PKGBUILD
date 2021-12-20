@@ -9,7 +9,7 @@ md5sums=('SKIP')
 
 package() {
     mkdir -p ${pkgdir}/usr/share/plasma/look-and-feel
-    cp -r ${srcdir}/org.koompi.theme.sovannaphumi-light ${pkgdir}/usr/share/plasma/look-and-feel
-    cp -r ${srcdir}/org.koompi.theme.sovannaphumi-dark ${pkgdir}/usr/share/plasma/look-and-feel
-    cp ${srcdir}/logo.png ${pkgdir}/usr/share/icons/koompi/sovannaphumi-{dark,light}.png
+    cp -r ${srcdir}/{pkgname}/org.koompi.theme.sovannaphumi-light ${pkgdir}/usr/share/plasma/look-and-feel
+    cp -r ${srcdir}/{pkgname}/org.koompi.theme.sovannaphumi-dark ${pkgdir}/usr/share/plasma/look-and-feel
+    cp ${srcdir}/{pkgname}/logo.png ${pkgdir}/usr/share/icons/koompi/sovannaphumi-{dark,light}.png
 }

@@ -8,7 +8,8 @@ source=("${pkgname}::git+https://github.com/mrrbrilliant/sovannaphumi-themes.git
 md5sums=('SKIP')
 
 package() {
-    mkdir -p ${pkgdir}/usr/share/plasma/look-and-feel
+    mkdir -p ${pkgdir}/usr/share/plasma/look-and-feel 
+    mkdir -p ${pkgdir}/usr/share/icons/koompi
     cp -r ${srcdir}/${pkgname}/org.koompi.theme.sovannaphumi-light ${pkgdir}/usr/share/plasma/look-and-feel
     cp -r ${srcdir}/${pkgname}/org.koompi.theme.sovannaphumi-dark ${pkgdir}/usr/share/plasma/look-and-feel
     cp ${srcdir}/${pkgname}/logo.png ${pkgdir}/usr/share/icons/koompi/sovannaphumi-dark.png

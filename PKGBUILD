@@ -4,7 +4,7 @@ pkgrel=1
 arch=('any')
 pkgdesc="KOOMPI themes customized for Sovannaphumi School"
 url="https://koompi.com"
-source=("${pkgname}::git+https://github.com/koompi/sovannaphumi-themes.git")
+source=("${pkgname}::git+https://github.com/mrrbrilliant/sovannaphumi-themes.git")
 md5sums=('SKIP')
 
 package() {
